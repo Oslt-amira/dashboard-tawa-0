@@ -1,11 +1,11 @@
+import { ContentSubmissionPanel } from "@/components/dashboard/ContentSubmissionPanel";
 import {
   DashboardHeader,
   mockUser,
 } from "@/components/dashboard/DashboardHeader";
-import { MoneyTalksCard } from "@/components/dashboard/MoneyTalksCard";
+import { MoneyTalksPanel } from "@/components/dashboard/MoneyTalksPanel";
 import { NewsCheck } from "@/components/dashboard/NewsCheck";
 import { PerformancePanel } from "@/components/dashboard/PerformancePanel";
-import { SubmissionStats } from "@/components/dashboard/SubmissionsStats";
 import { ToDoList } from "@/components/dashboard/ToDoList";
 
 export default function Dashboard() {
@@ -15,9 +15,9 @@ export default function Dashboard() {
 
       <div className="flex flex-col lg:flex-row gap-6">
         <div className="flex flex-col gap-6 flex-1">
-          <SubmissionStats />
+          <ContentSubmissionPanel />
           <PerformancePanel />
-          <MoneyTalksCard />
+          <MoneyTalksPanel />
         </div>
 
         <div className="flex flex-col gap-6 w-full lg:w-[300px] shrink-0">

@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }: { children: ReactNode }) {
     >
       <AppSidebar />
       <SidebarInset>
-        <div className="flex w-full flex-1 flex-col gap-4 rounded-lg ">
+        <div className="flex w-full flex-1 flex-col gap-1 rounded-lg ">
           <SidebarHeaderControls />
           {children}
         </div>

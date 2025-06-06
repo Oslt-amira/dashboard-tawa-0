@@ -54,10 +54,9 @@ export default function SearchBar() {
           scale: { duration: 0.4, ease: "easeInOut" },
           zIndex: { duration: 0 },
         }}
-        className="flex relative 
+        className="flex  
         mt-1
-          left-0  
-          items-center 
+          items-center justify-center
           border border-zinc-200 dark:border-zinc-700
           hover:border-1 
           hover:border-purple-200/50 
@@ -65,13 +64,12 @@ export default function SearchBar() {
           hover-radial-purple 
           rounded-full 
           bg-muted 
-          px-4 py-2 
+          px-4 py-1 
           text-muted-foreground 
           shadow-inner 
           max-w-xs sm:max-w-[350px] 
           hover:rounded-full 
           overflow-hidden 
-    
           z-40
           w-[35vw] sm:w-[250px]"
       >

@@ -1,9 +1,9 @@
 "use client";
 
-import { BellIcon } from "lucide-react";
+import { BadgeCheck, BellIcon, CheckCircle } from "lucide-react";
 import { Button } from "../ui/button";
-import { UserAvatar } from "./UserAvatar";
-
+import { motion } from "framer-motion";
+import { UserAvatar } from "./elements/UserAvatar";
 interface UserInfo {
   name: string;
   avatarUrl: string;
@@ -23,9 +23,24 @@ export function DashboardHeader({ user }: { user: UserInfo }) {
           <div className="flex items-center gap-2 text-sm text-zinc-400/60 py-1 ">
             <span>TAWA Verified Skills</span>
             {user.verified && (
-              <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center">
-                <span className="text-white text-[10px] font-bold">✓</span>
-              </div>
+              <motion.div
+                className=" text-white flex items-center justify-center"
+                animate={{
+                  scale: [1, 1.05, 1],
+                  opacity: [1, 0.8, 1],
+                }}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatDelay: 3,
+                }}
+              >
+                <BadgeCheck
+                  strokeWidth={1.25}
+                  absoluteStrokeWidth
+                  className="bg-green-500 rounded-full h-5 w-5 p-0.5"
+                />
+              </motion.div>
             )}
           </div>
         </div>
