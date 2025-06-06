@@ -14,7 +14,12 @@ import Image from "next/image";
 import { NavSecondary } from "./NavSecondary";
 import { CollapsibleNav } from "./CollapsibleNav";
 import { SideBarSettings } from "./SideBarSettings";
-import { Sidebar, SidebarContent, SidebarHeader, SidebarRail } from "../ui/sidebar";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarHeader,
+  SidebarRail,
+} from "../ui/sidebar";
 
 const data = {
   CollapsibleNav: [

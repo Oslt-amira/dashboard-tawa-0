@@ -1,7 +1,6 @@
 "use client";
 
-import { BellIcon, MoonIcon, SunIcon } from "lucide-react";
-import { useTheme } from "next-themes";
+import { BellIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { UserAvatar } from "./UserAvatar";
 
@@ -13,10 +12,8 @@ interface UserInfo {
 }
 
 export function DashboardHeader({ user }: { user: UserInfo }) {
-  const { theme, setTheme } = useTheme();
-
   return (
-    <div className="w-full rounded-xl bg-white  dark:bg-zinc-800 px-6 py-4 flex flex-col items-start justify-between shadow-sm">
+    <div className="w-full rounded-xl bg-white  dark:bg-zinc-900  px-6 py-4 flex flex-col items-start justify-between shadow-sm">
       <div className="flex w-full py-1 flex-row items-start justify-between">
         <div>
           <div className=" font-spline text-xl text-center flex space-x-0.5  ">
@@ -45,19 +42,6 @@ export function DashboardHeader({ user }: { user: UserInfo }) {
               4
             </span>
           </Button>
-
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="border border-transparent rounded-full    hover:cursor-pointer  text-muted-foreground h-fit   p-2 hover:bg-transparent w-fit justify-center  transition-colors duration-300 hover:text-purple-400 hover-radial-purple"
-          >
-            {theme === "dark" ? (
-              <SunIcon className="h-5 w-5" strokeWidth={1.5} />
-            ) : (
-              <MoonIcon className="h-5 w-5" strokeWidth={1.5} />
-            )}
-          </Button>
           <UserAvatar />
         </div>
       </div>
@@ -66,7 +50,8 @@ export function DashboardHeader({ user }: { user: UserInfo }) {
         {user.skills.map((skill) => (
           <span
             key={skill}
-            className="bg-[#edecfc] dark:bg-[#41405df5] dark:text-[#7374a7]   text-xs text-[#9496c6]  text-center font-[520] px-3 py-1 rounded-full"
+            className="bg-[#edecfc] dark:bg-zinc-900/50 dark:border dark:border-zinc-500/30 dark:text-[#545564]   text-xs text-[#9496c6] 
+             text-center font-medium px-3 py-1 rounded-full"
           >
             {skill}
           </span>

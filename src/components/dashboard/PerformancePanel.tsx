@@ -20,7 +20,7 @@ export function PerformancePanel() {
   ];
 
   return (
-    <div className="bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-sm w-full">
+    <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm w-full">
       <div className="flex items-center gap-2 mb-6">
         <div className="w-1.5 h-4 rounded-full bg-[#BEE4FF]" />
         <h2 className="font-semibold text-lg text-black">TAWA Performance</h2>

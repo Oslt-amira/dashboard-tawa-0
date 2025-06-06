@@ -2,7 +2,7 @@ import { ChevronRight, Info, ArrowDown, ArrowUp } from "lucide-react";
 
 export function MoneyTalksCard() {
   return (
-    <div className="bg-white dark:bg-zinc-800 p-6 rounded-2xl shadow-sm w-full">
+    <div className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm w-full">
       <div className="flex justify-between items-center mb-6">
         <div className="flex items-center gap-2">
           <div className="w-1.5 h-4 rounded-full bg-[#E7D9FF]" />
