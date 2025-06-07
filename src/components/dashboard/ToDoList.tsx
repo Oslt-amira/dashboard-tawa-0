@@ -45,7 +45,7 @@ export function ToDoList() {
       transition={{ duration: 0.5 }}
       className="bg-white dark:bg-zinc-900 p-6 rounded-2xl shadow-sm w-full"
     >
-      <PanelHeader title="News check" color="#FFD9A0" />
+      <PanelHeader title="To do list" color="#FFD9A0" />
       <ScrollArea className=" h-50 py-2 space-y-4 ">
         {todos.map((task, index) => (
           <motion.div
