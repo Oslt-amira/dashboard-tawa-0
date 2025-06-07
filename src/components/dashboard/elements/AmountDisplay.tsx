@@ -1,8 +1,10 @@
+"use client";
 import { Info, TrendingDown, TrendingUp } from "lucide-react";
+import { CountUp } from "./CountUp";
 
 type AmountDisplayProps = {
   label: string;
-  amount: string;
+  amount: number;
   percentage: string;
 };
 
@@ -18,10 +20,16 @@ export function AmountDisplay({
       <div className="flex items-center justify-center gap-2 text-sm text-zinc-500 dark:text-zinc-400">
         {label}
         <Info className="w-3.5 h-3.5" />
-      </div>
-      <div className="text-[50px] font-semibold leading-none text-zinc-900 dark:text-white">
-        {amount}
-      </div>
+      </div>{" "}
+      <CountUp
+        from={0}
+        to={amount}
+        separator=""
+        duration={1}
+        className="text-[50px] font-semibold leading-none text-zinc-900 dark:text-white"
+      >
+        TD
+      </CountUp>
       <div className="flex mt-2 items-center text-[11px] font-medium">
         {isPositive ? (
           <TrendingUp className="w-3.5 h-3.5 mr-1.5 text-green-600" />

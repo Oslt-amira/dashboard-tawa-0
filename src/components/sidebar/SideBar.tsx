@@ -70,7 +70,7 @@ export function AppSidebar() {
       className="max-w-1/6  "
     >
       <SidebarHeader className="p-3 pb-8 pt-5 flex flex-col items-center justify-center space-y-1">
-        <SidebarRail />
+        {/* <SidebarRail /> */}
 
         <Image
           src="/Group 2.svg"

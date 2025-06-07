@@ -33,10 +33,10 @@ export function SideBarSettings({
       <PopoverContent
         align="start"
         sideOffset={2}
-        className="w-56 space-y-3 rounded-xl"
+        className="w-50 space-y-3 rounded-xl"
         side="left"
       >
-        <h4 className="text-sm font-medium text-muted-foreground mb-1">
+        <h4 className="text-xs  text-center font-light text-muted-foreground mb-1 border-b border-b-zinc-400 pb-2">
           Sidebar Settings
         </h4>
 

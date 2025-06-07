@@ -125,3 +125,25 @@
     @apply bg-background text-foreground;
   }
 }
+/* 
+@layer utilities {
+  .hover-radial-purple:hover {
+    background: radial-gradient(circle at center,
+        rgba(169, 85, 247, 0.176) 0%,
+        rgba(146, 51, 234, 0.06) 60%,
+        rgba(146, 51, 234, 0.04) 80%,
+        rgba(126, 34, 206, 0.02) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+
+  .hover-text-radial-purple:hover {
+    background: radial-gradient(circle at center,
+        rgba(169, 85, 247, 0.15) 0%,
+        rgba(146, 51, 234, 0.05) 35%,
+        rgba(126, 34, 206, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+} */

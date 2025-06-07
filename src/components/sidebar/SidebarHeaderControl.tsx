@@ -17,6 +17,9 @@ export function SidebarHeaderControls() {
   return (
     <div className="relative w-full flex flex-col items-center">
       <motion.button
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
         onClick={() => setIsVisible(!isVisible)}
         className="absolute z-40 p-1 text-muted-foreground hover:text-purple-400 transition-colors"
         style={{

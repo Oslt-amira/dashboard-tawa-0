@@ -1,10 +1,17 @@
+"use client";
 import { ChevronRight, Info, TrendingDown, TrendingUp } from "lucide-react";
 import { AmountDisplay } from "./elements/AmountDisplay";
 import { PanelHeader } from "./elements/PanelHeader";
-
+import { motion } from "framer-motion";
+import React from "react";
 export function MoneyTalksPanel() {
   return (
-    <div className="bg-white dark:bg-zinc-900 p-6  rounded-2xl shadow-sm w-full">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="bg-white dark:bg-zinc-900 p-6  rounded-2xl shadow-sm w-full"
+    >
       <div className="flex justify-between items-center mb-6">
         <PanelHeader title="Money Talks" color="#E7D9FF" />
 
@@ -17,7 +24,7 @@ export function MoneyTalksPanel() {
       <div className="flex justify-between flex-col xs:flex-row">
         <AmountDisplay
           label="Received Amount"
-          amount="300 DT"
+          amount={300}
           percentage="37.8%"
         />
 
@@ -25,10 +32,10 @@ export function MoneyTalksPanel() {
 
         <AmountDisplay
           label="Pending Amount"
-          amount="200 DT"
+          amount={200}
           percentage="-37.8%"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

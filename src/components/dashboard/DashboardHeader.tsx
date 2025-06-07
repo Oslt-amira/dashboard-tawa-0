@@ -13,7 +13,12 @@ interface UserInfo {
 
 export function DashboardHeader({ user }: { user: UserInfo }) {
   return (
-    <div className="w-full rounded-xl bg-white  dark:bg-zinc-900  px-6 py-4 flex flex-col items-start justify-between shadow-sm">
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="w-full rounded-xl bg-white  dark:bg-zinc-900  px-6 py-4 flex flex-col items-start justify-between shadow-sm"
+    >
       <div className="flex w-full py-1 flex-row items-start justify-between">
         <div>
           <div className=" font-spline text-xl text-center flex space-x-0.5  ">
@@ -72,7 +77,7 @@ export function DashboardHeader({ user }: { user: UserInfo }) {
           </span>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
