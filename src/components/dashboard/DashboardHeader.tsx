@@ -1,6 +1,6 @@
 "use client";
 
-import { BadgeCheck, BellIcon, CheckCircle } from "lucide-react";
+import { BadgeCheck, BellIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
 import { UserAvatar } from "./elements/UserAvatar";

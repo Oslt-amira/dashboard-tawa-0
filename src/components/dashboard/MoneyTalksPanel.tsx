@@ -1,5 +1,5 @@
 "use client";
-import { ChevronRight, Info, TrendingDown, TrendingUp } from "lucide-react";
+import { ChevronRight} from "lucide-react";
 import { AmountDisplay } from "./elements/AmountDisplay";
 import { PanelHeader } from "./elements/PanelHeader";
 import { motion } from "framer-motion";

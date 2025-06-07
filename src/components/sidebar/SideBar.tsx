@@ -18,8 +18,6 @@ import { SideBarSettings } from "./SideBarSettings";
 import {
   Sidebar,
   SidebarContent,
-  SidebarHeader,
-  SidebarRail,
 } from "../ui/sidebar";
 
 const data = {
@@ -70,7 +68,6 @@ export function AppSidebar() {
       collapsible={collapsible}
       className="max-w-1/6  "
     >
-      {/* <SidebarRail /> */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
