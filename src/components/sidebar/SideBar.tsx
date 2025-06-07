@@ -10,6 +10,7 @@ import {
   Wallet,
 } from "lucide-react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { NavSecondary } from "./NavSecondary";
 import { CollapsibleNav } from "./CollapsibleNav";
@@ -69,9 +70,19 @@ export function AppSidebar() {
       collapsible={collapsible}
       className="max-w-1/6  "
     >
-      <SidebarHeader className="p-3 pb-8 pt-5 flex flex-col items-center justify-center space-y-1">
-        {/* <SidebarRail /> */}
-
+      {/* <SidebarRail /> */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        whileHover={{ scale: 1.03, y: 4 }}
+        transition={{
+          type: "spring",
+          stiffness: 300,
+          damping: 20,
+        }}
+        className="p-3 pb-8 pt-5  shrink-0 flex flex-col items-center justify-center space-y-1"
+      >
         <Image
           src="/Group 2.svg"
           alt="Main"
@@ -86,7 +97,7 @@ export function AppSidebar() {
           height={80}
           unoptimized
         />
-      </SidebarHeader>
+      </motion.div>
 
       <SidebarContent>
         <CollapsibleNav items={data.CollapsibleNav} />

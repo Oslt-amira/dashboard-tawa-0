@@ -21,7 +21,7 @@ export function SidebarHeaderControls() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         onClick={() => setIsVisible(!isVisible)}
-        className="absolute z-40 p-1 text-muted-foreground hover:text-purple-400 transition-colors"
+        className="absolute z-40 p-1 text-muted-foreground hover:scale-102 hover:text-purple-400 hover:bg-transparent transition-colors"
         style={{
           top: isVisible ? "2.25rem" : "0rem",
         }}
@@ -55,7 +55,7 @@ export function SidebarHeaderControls() {
               variant="ghost"
               size="icon"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="rounded-full text-muted-foreground p-2 w-fit h-fit justify-center transition-colors duration-300 hover:text-purple-400 hover:bg-transparent"
+              className="rounded-full text-muted-foreground p-2 w-fit h-fit justify-center transition-colors duration-300 hover:scale-102 hover:text-purple-400 hover:bg-transparent"
             >
               {theme === "dark" ? (
                 <SunIcon className="h-5 w-5" strokeWidth={1.5} />

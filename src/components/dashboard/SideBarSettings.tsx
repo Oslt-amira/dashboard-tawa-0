@@ -25,7 +25,7 @@ export function SideBarSettings({
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button className="p-2 rounded-md hover:bg-muted transition-colors text-muted-foreground">
+        <button className="p-2 rounded-md  hover:scale-102 hover:text-purple-400 hover:bg-transparent transition-colors text-muted-foreground">
           <Settings2 className="w-4 h-4" />
         </button>
       </PopoverTrigger>
